@@ -1,0 +1,11 @@
+# IntelliJ
+.idea
+
+# Eclipse
+bin
+.metadata
+tmp/
+.settings/
+.loadpath
+.recommenders
+.project
