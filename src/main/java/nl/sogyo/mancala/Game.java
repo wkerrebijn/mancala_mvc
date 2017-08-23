@@ -6,15 +6,39 @@ package nl.sogyo.mancala;
 
 import java.util.ArrayList;
 
-public class Gamestate {
+public class Game {
 
     private Player player;
     private ArrayList<Field> fields;
 
-    Gamestate() {
+    public Game() {
+        init();
+    }
+
+    private void init() {
         player = new Player();
         fields = new ArrayList<Field>();
-        Hole h = new Hole(4, p);
+
+        int size = 14;
+
+        Field h = new Hole(4, player);
+        ((Hole)h).initiateChain(size);
         fields.add(h);
+        for(int i = 1 ; i <= size ; i++) {
+            h = h.getNeighbor();
+            fields.add(h);
+        }
+    }
+
+    public void restart() {
+        init();
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public ArrayList<Field> getFields() {
+        return fields;
     }
 }

@@ -1,0 +1,72 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: black;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.mainwrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.backgroundwrapper {
+    width: 800px;
+    background-image: url("../images/space.png");
+    margin: 0 auto;
+    height: 100%;
+    padding: 50px;
+}
+
+.content {
+}
+
+.kalaha {
+    height: 50px;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: red;
+    opacity: 0.9;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    font-size: large;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: red;
+    background-color: ghostwhite;
+    opacity: 0.8;
+    width: 50px;
+    height: 10px;
+    border-radius: 100%;
+    padding: 50px;
+}
+
+#restart {
+    display: flex;
+    justify-content: center;
+    color: red;
+}
